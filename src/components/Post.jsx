@@ -25,7 +25,18 @@ export function Post() {
                          <a href="#">#opentowork</a>{' '}
                          <a href="#">#projetosdeti</a>
                     </p>
-               </div>               
+               </div>
+
+               <form className={styles.commentForm}>
+                    <strong>Deixe seu feedbak</strong>
+
+                    <textarea placeholder="Deixe um comentário" />
+
+                    <footer>
+                         <button type="submit">Publicar</button>
+                    </footer>
+               </form>
+
           </article>
      )
 }
