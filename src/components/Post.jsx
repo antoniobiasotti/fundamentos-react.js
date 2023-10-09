@@ -19,8 +19,12 @@ export function Post() {
                     <p>Fala galeraa 👋</p>
                     <p>Acabei de subir mais um projeto pro meu portifólio!!</p>
                     <p>Confere lá 🚀</p>
-                    <p>👉 <a href="#">antoniobiasotti.dev</a></p>
-                    <p><a href="">#novoprojeto #opentowork</a></p>
+                    <p>👉{'   '}<a href="#">antoniobiasotti.dev</a></p>
+                    <p>
+                         <a href="#">#novoprojeto</a>{' '}
+                         <a href="#">#opentowork</a>{' '}
+                         <a href="#">#projetosdeti</a>
+                    </p>
                </div>               
           </article>
      )
