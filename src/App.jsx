@@ -6,6 +6,37 @@ import styles from './App.module.css';
 
 import './global.css';
 
+const posts = [
+  {
+    id: 1,
+    author: {
+      avatarUrl: 'https://github.com/antoniobiasotti.png',
+      name: 'Antonio Biasotti',
+      role: 'Front-end Developer'
+    },
+    content: [
+      { type: 'paragraph', content: 'Fala galeraa 👋'},
+      { type: 'paragraph', content: 'Acabei de subir mais um projeto pro meu portifólio!!'},
+      { type: 'link', content: ''},
+    ],
+    publishedAt: new Date('2023-10-13 14:46:23'),
+  },
+  {
+    id: 2,
+    author: {
+      avatarUrl: 'https://github.com/antoniobiasotti.png',
+      name: 'João Emanuel',
+      role: 'Full-Stack Developer'
+    },
+    content: [
+      { type: 'paragraph', content: 'Fala galeraa 👋'},
+      { type: 'paragraph', content: 'Acabei de subir mais um projeto pro meu portifólio!!'},
+      { type: 'link', content: ''},
+    ],
+    publishedAt: new Date('2023-10-20 14:46:23'),
+  },
+];
+
 export function App() {
   return (
     <div>
@@ -14,14 +45,15 @@ export function App() {
       <div className={styles.wrapper}>
         <Sidebar />
         <main>
-            <Post 
-              author="Antonio Biasotti" 
-              content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum aliquam impedit tenetur vero rerum, corrupti nihil repellendus sunt eos ex necessitatibus dolorum cupiditate rem totam laboriosam, hic nesciunt minus unde."
-            />
-            <Post
-              author="Gabriel Caruzo"
-              content="Um novo post muito legal"
-            />
+          {posts.map(post => {
+            return (
+              <Post
+                author={post.author}
+                content={post.content}
+                publishedAt={post.publishedAt}
+              />
+            )
+          })}
         </main>
       </div>
     </div>
