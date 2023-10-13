@@ -10,13 +10,13 @@ const posts = [
   {
     id: 1,
     author: {
-      avatarUrl: 'https://github.com/antoniobiasotti.png',
-      name: 'Antonio Biasotti',
-      role: 'Front-end Developer'
+      avatarUrl: 'https://github.com/emanuellMarinho.png',
+      name: 'João Emanuel',
+      role: 'Full-Stack Developer'
     },
     content: [
       { type: 'paragraph', content: 'Fala galeraa 👋'},
-      { type: 'paragraph', content: 'Acabei de subir mais um projeto pro meu portifólio!!'},
+      { type: 'paragraph', content: 'Acabei de subir mais um projeto pro meu portifólio!! O nome O nome do projeto é brah-brah-brah. Confere lá!'},
       { type: 'link', content: ''},
     ],
     publishedAt: new Date('2023-10-13 14:46:23'),
