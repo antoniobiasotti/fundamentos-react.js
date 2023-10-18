@@ -32,13 +32,21 @@ export function Post({ author, publishedAt, content }) {
      }
 
      function handleNewCommentChange() {
+          event.target.setCustomValidity('')
           setNewCommentText(event.target.value);
      }
 
-     function deleteComment(comment) {
-          console.log(`Deletar comentário ${comment}`)
+     function handleNewCommentInvalid() {
+          event.target.setCustomValidity('Esse campo é obrigatório');
      }
 
+     function deleteComment(commentToDelete) {
+          const commentsWithoutDeletedOne = comments.filter(comment => {
+               return comment !== commentToDelete;
+          })
+
+          setComments(commentsWithoutDeletedOne);
+     }
 
      return (
           <article className={styles.post}>
@@ -74,6 +82,8 @@ export function Post({ author, publishedAt, content }) {
                          placeholder="Deixe um comentário"
                          value={newCommentText}
                          onChange={handleNewCommentChange}
+                         onInvalid={handleNewCommentInvalid}
+                         required
                     />
 
                     <footer>

@@ -19,7 +19,7 @@ const posts = [
       { type: 'paragraph', content: 'Acabei de subir mais um projeto pro meu portifólio!! O nome O nome do projeto é brah-brah-brah. Confere lá!'},
       { type: 'link', content: ''},
     ],
-    publishedAt: new Date('2023-10-13 14:46:23'),
+    publishedAt: new Date('2023-10-17 14:46:23'),
   },
   {
     id: 2,
@@ -33,7 +33,7 @@ const posts = [
       { type: 'paragraph', content: 'Acabei de subir mais um projeto pro meu portifólio!!'},
       { type: 'link', content: ''},
     ],
-    publishedAt: new Date('2023-10-20 14:46:23'),
+    publishedAt: new Date('2022-10-20 14:46:23'),
   },
 ];
 
