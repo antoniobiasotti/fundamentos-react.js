@@ -48,14 +48,14 @@
 .authorInfo strong {
      display: block;
      color: var(--gray-100);
-     line-heigth: 1.6;
+     line-height: 1.6;
 }
 
 .authorInfo span {
      display: block;
      font-size: 0.875rem;
      color: var(--gray-400);
-     line-heigth: 1.6;
+     line-height: 1.6;
 }
 
 .commentForm {
